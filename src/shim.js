@@ -17,7 +17,8 @@
       '<a id="lg-reset" href="#" style="font-size:.85rem">He olvidado la contraseña</a><div id="lg-err" style="color:#c0392b;min-height:1.2em;font-size:.9rem"></div></div>';
     document.body.appendChild(ov);
     var err = ov.querySelector("#lg-err");
-    function go(){ err.textContent = ""; auth.signInWithEmailAndPassword(ov.querySelector("#lg-mail").value.trim(), ov.querySelector("#lg-pass").value).catch(function(){ err.textContent = "Correo o contraseña incorrectos."; }); }
+    if (window.CUENTA_EMAIL){ ov.querySelector("#lg-mail").style.display = "none"; ov.querySelector("#lg-reset").style.display = "none"; ov.querySelector("#lg-pass").focus(); }
+    function go(){ err.textContent = ""; auth.signInWithEmailAndPassword(window.CUENTA_EMAIL || ov.querySelector("#lg-mail").value.trim(), ov.querySelector("#lg-pass").value).catch(function(){ err.textContent = window.CUENTA_EMAIL ? "Contraseña incorrecta." : "Correo o contraseña incorrectos."; }); }
     ov.querySelector("#lg-go").onclick = go;
     ov.querySelector("#lg-pass").onkeydown = function(e){ if (e.key === "Enter") go(); };
     ov.querySelector("#lg-reset").onclick = function(e){ e.preventDefault(); var m = ov.querySelector("#lg-mail").value.trim(); if (!m){ err.textContent = "Escribe tu correo primero."; return; } auth.sendPasswordResetEmail(m).then(function(){ err.style.color = "inherit"; err.textContent = "Te hemos enviado un correo para cambiarla."; }).catch(function(){ err.textContent = "No se pudo enviar el correo."; }); };
