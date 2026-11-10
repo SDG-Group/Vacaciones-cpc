@@ -1,0 +1,112 @@
+<!doctype html><html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Guía de uso · Vacaciones del equipo</title>
+<style>
+:root{color-scheme:light dark;--ac:#2f6fed;--bg:#f6f7fb;--card:#fff;--fg:#1c1f26;--mut:#5d6675;--l:#e2e5ee}
+@media (prefers-color-scheme:dark){:root{--ac:#7aa2ff;--bg:#12151c;--card:#1b1f29;--fg:#e8ebf2;--mut:#9aa3b5;--l:#2a3040}}
+*{box-sizing:border-box} body{margin:0;font-family:system-ui,-apple-system,sans-serif;background:var(--bg);color:var(--fg);line-height:1.55}
+header{background:linear-gradient(135deg,#2f6fed,#7b4fe0);color:#fff;padding:28px 16px 20px}
+header .w,main{max-width:780px;margin:0 auto} h1{margin:0 0 4px;font-size:1.6rem} header p{margin:0;opacity:.9}
+header a{color:#fff;font-weight:600}
+nav{position:sticky;top:0;z-index:5;background:var(--card);border-bottom:1px solid var(--l)}
+nav .w{max-width:780px;margin:0 auto;display:flex;gap:4px;padding:6px 8px;overflow-x:auto}
+nav button{flex:1;white-space:nowrap;border:0;background:none;color:var(--mut);font:inherit;font-weight:600;padding:10px 12px;border-radius:10px;cursor:pointer}
+nav button[aria-selected=true]{background:var(--ac);color:#fff}
+main{padding:16px} section{display:none} section.on{display:block}
+details{background:var(--card);border:1px solid var(--l);border-radius:12px;margin:10px 0;overflow:hidden}
+summary{cursor:pointer;padding:13px 16px;font-weight:700;list-style:none} summary::-webkit-details-marker{display:none}
+summary::before{content:"›";display:inline-block;margin-right:10px;color:var(--ac);transition:transform .15s}
+details[open]>summary::before{transform:rotate(90deg)} details[open]>summary{border-bottom:1px solid var(--l)}
+.b{padding:4px 18px 12px} li{margin:5px 0} code{background:var(--bg);padding:1px 6px;border-radius:5px;font-size:.92em}
+blockquote{margin:10px 0;border-left:4px solid #e0a000;background:var(--bg);padding:6px 12px;border-radius:0 8px 8px 0}
+h2{font-size:1.1rem;margin:22px 0 4px;color:var(--ac)}
+</style></head><body>
+<header><div class="w"><h1>🏖️ Guía de uso</h1><p>Vacaciones del equipo · <a href="./">Volver a la app</a></p></div></header>
+<nav><div class="w" role="tablist">
+<button role="tab" data-t="uso" aria-selected="true">👥 Uso diario</button>
+<button role="tab" data-t="admin" aria-selected="false">🧑‍💼 Administración</button>
+<button role="tab" data-t="faq" aria-selected="false">❓ Preguntas frecuentes</button></div></nav>
+<main>
+<section id="uso" class="on"><details><summary>Entrar y elegir quién eres</summary><div class='b'><ol>
+<li>Abre el enlace de la app y escribe la contraseña del equipo.</li>
+<li>Arriba, en <strong>¿Quién eres?</strong>, elige tu nombre. Se recuerda en ese dispositivo; si cambias de móvil u ordenador, vuelve a elegirlo.</li>
+<li>Tu fila y tu tarjeta salen marcadas con «· tú».</li>
+</ol></div></details>
+<details><summary>Marcar y quitar días</summary><div class='b'><ol>
+<li>En la pestaña <strong>Calendario</strong>, elige en «Marcar como» el tipo: Vacaciones, Asunto propio (AP), Vacaciones tentativo (T), Baja laboral (B) o Teletrabajo extranjero (TT).</li>
+<li>Haz clic en el día de tu fila (en «Por meses», toca el día). Un segundo clic igual lo quita.</li>
+<li>Para medio día, activa antes el botón «½ Medio día».</li>
+</ol>
+<ul>
+<li>Solo <strong>Vacaciones</strong> y <strong>AP</strong> descuentan saldo; tentativo, baja y teletrabajo se ven pero no descuentan.</li>
+<li>No se pueden marcar fines de semana, festivos de tu ubicación ni días antes de tu alta o después de tu salida (salen rayados).</li>
+</ul></div></details>
+<details><summary>Cómo se descuentan los días</summary><div class='b'><p>Cada año da 22 días base (configurable por año) más los extra de cada persona. Los de un año se pueden disfrutar hasta el 30 de abril del siguiente.
+Siempre se gastan primero los que caducan antes (los pendientes del año anterior). Solo cuentan días laborables según tu ubicación.
+Si entras o sales a mitad de año, ese año se calcula proporcional, redondeado a medio día.
+«Tu saldo» y las tarjetas muestran cuánto queda, en verde, ámbar (3 o menos) o rojo (te pasas).</p></div></details>
+<details><summary>Ver quién está fuera y solapamientos</summary><div class='b'><ul>
+<li>El filtro de arriba («Toda la empresa», «Por equipos», «Por personas») cambia lo que ves en toda la página.</li>
+<li>La banda resumen muestra quién está fuera hoy, esta semana y las próximas ausencias.</li>
+<li>«Solapamientos dentro de cada equipo» lista los días en que 2 o más personas del mismo equipo están fuera.</li>
+</ul></div></details>
+<details><summary>Descargar o copiar el resumen</summary><div class='b'><p>En Calendario, <strong>Descargar Excel</strong> genera un fichero con las hojas «Resumen» y «Calendario» (respeta el filtro y el periodo). <strong>Copiar resumen</strong> lo copia como texto.</p></div></details>
+<details><summary>Usarla en el móvil</summary><div class='b'><p>Abre el enlace en el móvil y añádela a la pantalla de inicio:</p>
+<ul>
+<li><strong>iPhone:</strong> Safari → Compartir → «Añadir a pantalla de inicio».</li>
+<li><strong>Android:</strong> Chrome → menú ⋮ → «Añadir a pantalla de inicio» o «Instalar app».</li>
+</ul></div></details></section>
+<section id="admin"><details><summary>Dar de alta a una persona</summary><div class='b'><ol>
+<li>Pestaña <strong>Equipos y saldos → Añadir persona</strong>.</li>
+<li>Rellena nombre, equipo, ubicación y los pendientes del año anterior.</li>
+<li>La <strong>fecha de alta</strong> déjala <strong>vacía</strong> para quien ya estaba en la empresa (tiene los 22 días completos). Rellénala solo para incorporaciones nuevas: así se calcula la parte proporcional.</li>
+</ol></div></details>
+<details><summary>Dar de baja a una persona</summary><div class='b'><ol>
+<li>En <strong>Equipos y saldos</strong>, pon su <strong>fecha de salida</strong>. Desde ese día no cuenta ni se puede marcar, y su historial se conserva.</li>
+<li>Para borrarla del todo, usa «Quitar persona» (pide confirmar con un segundo clic: «¿Seguro? Pulsa otra vez»).</li>
+<li>Marca «Mostrar también a quien ya no está en la empresa» para verla de nuevo.</li>
+</ol></div></details>
+<details><summary>Cambiar equipo, ubicación, extras o pendientes</summary><div class='b'><p>Todo se edita en <strong>Equipos y saldos</strong> (tabla o tarjetas). Los días extra (hasta 3) se ponen por año solo a quien los tenga. También puedes renombrar, quitar o añadir equipos arriba.</p></div></details>
+<details><summary>Añadir un año nuevo (p. ej. 2028)</summary><div class='b'><ol>
+<li>Pestaña <strong>Años y festivos → Añadir 2028</strong>. Se crean los derechos de ese año para todos, y queda como «Provisional».</li>
+<li>Carga los festivos (ver el apartado siguiente).</li>
+<li>Cuando salgan los oficiales, corrígelos y cambia el año a «Oficial». Ahí también puedes ajustar los días base del año y la regla del 24 y 31 de diciembre.</li>
+</ol></div></details>
+<details><summary>Cargar festivos: tres formas</summary><div class='b'><p><strong>A. Rellenar provisionales.</strong> En «Años y festivos», pulsa <strong>Rellenar provisionales (fijos + Semana Santa)</strong>: añade los nacionales de fecha fija y el Viernes Santo del año abierto. Faltan los autonómicos y locales.</p>
+<p><strong>B. Importar un fichero desde la app.</strong> Pulsa <strong>Importar festivos (.ics, .csv, .xlsx)</strong>, elige el fichero (columnas: fecha, nombre, ubicación; usa la plantilla), revisa la vista previa y pulsa «Importar». El año debe existir antes. Si algún festivo cae en un día ya marcado, avisa.</p>
+<p><strong>C. Subir el fichero al repositorio (GitHub).</strong> Sube <code>2028.xlsx</code> o <code>2028.csv</code> a la carpeta <code>festivos</code> (Add file → Upload files → Commit). Al terminar la ejecución en «Actions», recarga la app. Si hay un error de formato, la ejecución sale en rojo y dice la fila.</p>
+<blockquote>
+<p><strong>Para quitar</strong> un festivo, bórralo del fichero (si viene de ahí) <strong>y</strong> de «Años y festivos».</p>
+</blockquote>
+<p>Los festivos locales de cada ayuntamiento hay que comprobarlos siempre en su boletín o web oficial.</p></div></details>
+<details><summary>Añadir una ubicación nueva</summary><div class='b'><p>En «Años y festivos», en el apartado de ubicaciones, añade la nueva y cárgale sus festivos. Después asígnasela a las personas en «Equipos y saldos».
+Para que los ficheros de festivos la reconozcan, hay que añadirla también en <code>build.mjs</code> (lista <code>LOCS</code>).</p></div></details>
+<details><summary>Asuntos propios y 24/31 de diciembre</summary><div class='b'><ul>
+<li>En «Años y festivos», el interruptor «La empresa usa asuntos propios» los activa o los quita de toda la app.</li>
+<li>La casilla de cada año hace que el 24 y el 31 de diciembre cuenten medio día cada uno.</li>
+</ul></div></details>
+<details><summary>Cambiar la contraseña del equipo</summary><div class='b'><ol>
+<li>Firebase → Authentication → Usuarios → ⋮ de la cuenta → <strong>Eliminar cuenta</strong>.</li>
+<li><strong>Agregar usuario</strong> con el mismo correo y la contraseña nueva, y avisa al equipo.</li>
+</ol>
+<p>Los datos no se pierden: están en la base de datos, no en la cuenta.</p></div></details></section>
+<section id="faq"><details><summary>No me deja marcar un día</summary><div class='b'><p>Comprueba que no sea fin de semana, festivo de tu ubicación o un día fuera de tu alta/salida (salen rayados), y que el tipo elegido sea el que quieres.</p></div></details>
+<details><summary>Me he equivocado al marcar un día</summary><div class='b'><p>Haz clic otra vez en el mismo día con el mismo tipo seleccionado: se quita.</p></div></details>
+<details><summary>No veo los cambios de otros</summary><div class='b'><p>Recarga la página. Si sigue igual, revisa la conexión; si te pide la contraseña de nuevo, la han cambiado.</p></div></details>
+<details><summary>He subido los festivos y no aparecen</summary><div class='b'><p>Mira en «Actions» del repositorio que la ejecución haya terminado en verde, recarga con recarga forzada y comprueba que el año exista en «Años y festivos».</p></div></details>
+<details><summary>No me acuerdo de la contraseña</summary><div class='b'><p>No hay recuperación por correo: la cambia quien administra el proyecto en Firebase. Pídesela.</p></div></details>
+<details><summary>¿Quién puede ver mis vacaciones?</summary><div class='b'><p>Cualquiera que tenga la contraseña del equipo ve el calendario completo. El historial guarda la persona que eligió ser cada uno en «¿Quién eres?».</p></div></details>
+<details><summary>Me pide elegir mi nombre otra vez</summary><div class='b'><p>Se guarda por dispositivo y navegador. Si cambias de móvil u ordenador, o borras los datos del navegador, vuelve a pedirlo.</p></div></details>
+<details><summary>¿Funciona sin conexión?</summary><div class='b'><p>Necesita conexión para guardar y ver los cambios de los demás; no está pensada para usarse sin ella.</p></div></details>
+<details><summary>¿Por qué no hay botón de Google Calendar?</summary><div class='b'><p>En esta versión no existe el botón «Fuera de la oficina». Puedes usar los enlaces de evento normal para Google y Outlook, el CSV o el texto de respuesta automática.</p></div></details></section>
+</main>
+<script>
+(function(){
+  var bs=document.querySelectorAll("nav button"), ss=document.querySelectorAll("section");
+  function go(t){ if(!document.getElementById(t)) t="uso";
+    bs.forEach(function(b){ b.setAttribute("aria-selected", b.dataset.t===t); });
+    ss.forEach(function(s){ s.classList.toggle("on", s.id===t); });
+    try{ history.replaceState(null,"","#"+t); }catch(e){} }
+  bs.forEach(function(b){ b.onclick=function(){ go(b.dataset.t); window.scrollTo(0,0); }; });
+  go(location.hash.slice(1));
+})();
+</script></body></html>
