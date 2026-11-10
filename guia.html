@@ -1,0 +1,81 @@
+<!doctype html><html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Guía de uso · Vacaciones del equipo</title>
+<style>
+:root{color-scheme:light dark;--l:#d9d9d9;--bg:#fff;--fg:#1c1c1c;--soft:#f4f4f4}
+@media (prefers-color-scheme:dark){:root{--l:#3a3a3a;--bg:#161616;--fg:#e8e8e8;--soft:#222}}
+body{font-family:system-ui,sans-serif;background:var(--bg);color:var(--fg);max-width:760px;margin:0 auto;padding:16px;line-height:1.5}
+details{border:1px solid var(--l);border-radius:10px;margin:10px 0;background:var(--soft)}
+summary{cursor:pointer;padding:12px 14px;font-weight:700}
+details>div{padding:0 16px 12px}
+li{margin:4px 0} code{background:var(--bg);padding:1px 5px;border-radius:4px}
+.nota{border-left:4px solid #e0a000;padding:6px 10px;background:var(--bg);margin:8px 0}
+</style></head><body>
+<h1>Guía de uso</h1>
+<p>Toca un apartado para abrirlo. <a href="./">Volver a la app</a></p>
+
+<h2>Para todo el equipo</h2>
+<details><summary>Entrar y elegir quién eres</summary><div><ol>
+<li>Abre el enlace de la app y escribe la contraseña del equipo.</li>
+<li>Arriba, en «¿Quién eres?», elige tu nombre. Se recuerda en ese dispositivo; si cambias de móvil u ordenador, vuelve a elegirlo.</li>
+<li>Tu fila y tu tarjeta salen marcadas con «· tú».</li></ol></div></details>
+
+<details><summary>Marcar y quitar días</summary><div><ol>
+<li>En la pestaña <b>Calendario</b>, elige en «Marcar como» el tipo: Vacaciones, Asunto propio (AP), Vacaciones tentativo (T), Baja laboral (B) o Teletrabajo extranjero (TT).</li>
+<li>Haz clic en el día de tu fila (en «Por meses», toca el día). Un segundo clic igual lo quita.</li>
+<li>Para medio día, activa antes el botón «½ Medio día».</li></ol>
+<ul><li>Solo <b>Vacaciones</b> y <b>AP</b> descuentan saldo; tentativo, baja y teletrabajo se ven pero no descuentan.</li>
+<li>No se pueden marcar fines de semana, festivos de tu ubicación ni días antes de tu alta o después de tu salida (salen rayados).</li></ul></div></details>
+
+<details><summary>Cómo se descuentan los días</summary><div>
+<p>Cada año da 22 días base (configurable por año) más los extra que tenga cada persona. Los de un año se pueden disfrutar hasta el 30 de abril del siguiente.
+Siempre se gastan primero los que caducan antes (los pendientes del año anterior). Solo cuentan días laborables según tu ubicación.
+Si entras o sales a mitad de año, ese año se calcula proporcional, redondeado a medio día. «Tu saldo» y las tarjetas muestran cuánto queda, en verde, ámbar (3 o menos) o rojo (te pasas).</p></div></details>
+
+<details><summary>Ver quién está fuera y solapamientos</summary><div><ul>
+<li>El filtro de arriba («Toda la empresa», «Por equipos», «Por personas») cambia lo que ves en toda la página.</li>
+<li>La banda resumen muestra quién está fuera hoy, esta semana y las próximas ausencias.</li>
+<li>«Solapamientos dentro de cada equipo» lista los días en que 2 o más personas del mismo equipo están fuera.</li></ul></div></details>
+
+<details><summary>Descargar o copiar el resumen</summary><div><p>En Calendario, <b>Descargar Excel</b> genera un fichero con las hojas «Resumen» y «Calendario» (respeta el filtro y el periodo). <b>Copiar resumen</b> lo copia como texto.</p></div></details>
+
+<h2>Para quien administra el equipo</h2>
+<details><summary>Dar de alta a una persona</summary><div><ol>
+<li>Pestaña <b>Equipos y saldos → Añadir persona</b>.</li>
+<li>Rellena nombre, equipo, ubicación y los pendientes del año anterior.</li>
+<li>La <b>fecha de alta</b> déjala <b>vacía</b> para quien ya estaba en la empresa (tiene los 22 días completos). Rellénala solo para incorporaciones nuevas: así se calcula la parte proporcional.</li></ol></div></details>
+
+<details><summary>Dar de baja a una persona</summary><div><ol>
+<li>En <b>Equipos y saldos</b>, pon su <b>fecha de salida</b>. Desde ese día no cuenta ni se puede marcar, y su historial se conserva.</li>
+<li>Para borrarla del todo, usa «Quitar persona» (pide confirmar con un segundo clic: «¿Seguro? Pulsa otra vez»).</li>
+<li>Marca «Mostrar también a quien ya no está en la empresa» para verla de nuevo.</li></ol></div></details>
+
+<details><summary>Cambiar equipo, ubicación, extras o pendientes</summary><div>
+<p>Todo se edita en <b>Equipos y saldos</b> (tabla o tarjetas). Los días extra (hasta 3) se ponen por año solo a quien los tenga. También puedes renombrar, quitar o añadir equipos arriba.</p></div></details>
+
+<details><summary>Añadir un año nuevo (p. ej. 2028)</summary><div><ol>
+<li>Pestaña <b>Años y festivos</b> → <b>Añadir 2028</b>. Se crean los derechos de ese año para todos, y queda como «Provisional».</li>
+<li>Carga los festivos (ver el apartado siguiente).</li>
+<li>Cuando salgan los oficiales, corrígelos y cambia el año a «Oficial». Ahí también puedes ajustar los días base del año y la regla del 24 y 31 de diciembre.</li></ol></div></details>
+
+<details><summary>Cargar festivos: tres formas</summary><div>
+<p><b>A. Rellenar provisionales.</b> En «Años y festivos», pulsa <b>Rellenar provisionales (fijos + Semana Santa)</b>: añade los nacionales de fecha fija y el Viernes Santo del año abierto. Faltan los autonómicos y locales.</p>
+<p><b>B. Importar un fichero desde la app.</b> Pulsa <b>Importar festivos (.ics, .csv, .xlsx)</b>, elige el fichero (columnas: fecha, nombre, ubicación; usa la plantilla), revisa la vista previa y pulsa «Importar». El año debe existir antes. Si algún festivo cae en un día ya marcado, avisa.</p>
+<p><b>C. Subir el fichero al repositorio (GitHub).</b> Sube <code>2028.xlsx</code> o <code>2028.csv</code> a la carpeta <code>festivos</code> (Add file → Upload files → Commit). Al terminar la ejecución en «Actions», recarga la app. Si hay un error de formato, la ejecución sale en rojo y dice la fila.</p>
+<div class="nota">Para <b>quitar</b> un festivo, bórralo del fichero (si viene de ahí) <b>y</b> de «Años y festivos».</div>
+<p>Los festivos locales de cada ayuntamiento hay que comprobarlos siempre en su boletín o web oficial; el BOE solo recoge los nacionales y los de cada comunidad.</p></div></details>
+
+<details><summary>Añadir una ubicación nueva</summary><div><p>En «Años y festivos», en el apartado de ubicaciones, añade la nueva y cárgale sus festivos. Después asígnasela a las personas en «Equipos y saldos». Para que los ficheros de festivos la reconozcan, hay que añadirla también en <code>build.mjs</code> (lista <code>LOCS</code>); pídelo si lo necesitas.</p></div></details>
+
+<details><summary>Asuntos propios y 24/31 de diciembre</summary><div><ul>
+<li>En «Años y festivos», el interruptor «La empresa usa asuntos propios» los activa o los quita de toda la app.</li>
+<li>La casilla de cada año hace que el 24 y el 31 de diciembre cuenten medio día cada uno.</li></ul></div></details>
+
+<details><summary>Cambiar la contraseña del equipo</summary><div><ol>
+<li>Firebase → Authentication → Usuarios → ⋮ de la cuenta → <b>Eliminar cuenta</b>.</li>
+<li><b>Agregar usuario</b> con el mismo correo y la contraseña nueva, y avisa al equipo.</li></ol></div></details>
+
+<h2>Problemas frecuentes</h2>
+<details><summary>No me deja marcar un día</summary><div><p>Comprueba que no sea fin de semana, festivo de tu ubicación o un día fuera de tu alta/salida (salen rayados), y que el tipo elegido sea el que quieres.</p></div></details>
+<details><summary>No cambia nada al editar o no veo los cambios de otros</summary><div><p>Recarga la página. Si sigue igual, revisa la conexión; si pide la contraseña de nuevo, la han cambiado.</p></div></details>
+<details><summary>He subido los festivos y no aparecen</summary><div><p>Mira en «Actions» que la ejecución haya terminado en verde, recarga con recarga forzada y comprueba que el año exista en «Años y festivos».</p></div></details>
+</body></html>
