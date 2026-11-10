@@ -16,3 +16,4 @@ window.FIREBASE_CONFIG = firebaseConfig;
 // true  = todo el equipo entra con UNA cuenta compartida (cada persona elige su nombre en «¿Quién eres?» en su dispositivo).
 // false = una cuenta por persona.
 window.CUENTA_COMPARTIDA = true;
+window.CUENTA_EMAIL = "vacaciones_cpc@sdggroup.com";
