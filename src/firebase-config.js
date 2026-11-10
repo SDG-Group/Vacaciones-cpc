@@ -2,10 +2,13 @@
 // Sustituye el bloque de ejemplo de abajo (el de PEGA_AQUI). No pegues las líneas «import ...» ni «initializeApp(...)».
 // Esta configuración no es secreta: la seguridad la dan las reglas de Firestore y el inicio de sesión.
 const firebaseConfig = {
-  apiKey: "PEGA_AQUI",
-  authDomain: "PEGA_AQUI",
-  projectId: "PEGA_AQUI",
-  appId: "PEGA_AQUI"
+  apiKey: "AIzaSyD9NDnXq2Iqs_QZozVWbeiG26tFJIXp-Uc",
+  authDomain: "vacaciones-cpc.firebaseapp.com",
+  projectId: "vacaciones-cpc",
+  storageBucket: "vacaciones-cpc.firebasestorage.app",
+  messagingSenderId: "177940139589",
+  appId: "1:177940139589:web:0003ae447f8642b654dd2c",
+  measurementId: "G-1BY38MDP27"
 };
 
 // No toques lo de abajo.
