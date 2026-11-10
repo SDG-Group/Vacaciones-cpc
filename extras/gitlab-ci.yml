@@ -1,0 +1,21 @@
+# Solo para GitLab: renombrar a .gitlab-ci.yml en la raíz del proyecto
+image: node:20
+
+validar:
+  stage: test
+  rules:
+    - if: $CI_PIPELINE_SOURCE == "merge_request_event"
+  script:
+    - npm install --no-audit --no-fund
+    - node build.mjs
+
+pages:
+  stage: deploy
+  rules:
+    - if: $CI_COMMIT_BRANCH == $CI_DEFAULT_BRANCH
+  script:
+    - npm install --no-audit --no-fund
+    - node build.mjs
+  artifacts:
+    paths:
+      - public

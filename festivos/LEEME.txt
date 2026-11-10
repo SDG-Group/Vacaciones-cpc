@@ -1,0 +1,4 @@
+Sube aquí un fichero por año: 2028.csv o 2028.xlsx (columnas: fecha, nombre, ubicación).
+Usa la plantilla de la carpeta «plantilla». Ubicación: Todas, Barcelona, Madrid o Valencia.
+El año tiene que estar creado antes en la app («Años y festivos» → «Añadir año»).
+(Este LEEME.txt se ignora.)
